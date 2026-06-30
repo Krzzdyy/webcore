@@ -1,10 +1,10 @@
 import SpiderWeb from '../components/SpiderWeb'
 
 const services = [
-  { icon: '🖥️', title: 'Landing Pages', desc: 'Single-page sites built to capture attention and convert visitors into paying customers.', color: 'bg-acid' },
-  { icon: '🏢', title: 'Business Websites', desc: 'Multi-page websites covering your services, about, contact — everything clients need to trust you.', color: 'bg-cobalt text-cream' },
-  { icon: '📅', title: 'Booking Integration', desc: 'Let clients book appointments directly from your site — no back-and-forth, no missed inquiries.', color: 'bg-punch text-cream' },
-  { icon: '✏️', title: 'CMS / Easy Editing', desc: 'Update your own content anytime without touching a single line of code.', color: 'bg-acid' },
+  { icon: '🖥️', title: 'Landing Pages', desc: 'Single-page sites built to capture attention and convert visitors into paying customers.', color: 'bg-[#B4E50D]' },
+  { icon: '🏢', title: 'Business Websites', desc: 'Multi-page websites covering your services, about, contact — everything clients need to trust you.', color: 'bg-[#134686] text-cream' },
+  { icon: '📅', title: 'Booking Integration', desc: 'Let clients book appointments directly from your site — no back-and-forth, no missed inquiries.', color: 'bg-[#E00543] text-cream' },
+  { icon: '✏️', title: 'CMS / Easy Editing', desc: 'Update your own content anytime without touching a single line of code.', color: 'bg-[#B4E50D]' },
   { icon: '🔍', title: 'Basic SEO Setup', desc: 'Meta tags, page titles, descriptions, and mobile optimization so Google can actually find you.', color: 'bg-ink text-cream' },
   { icon: '📱', title: 'Mobile-First Design', desc: 'Every site looks and works perfectly on phones, tablets, and desktops — guaranteed.', color: 'bg-cream' },
 ]
@@ -24,11 +24,11 @@ const Services = () => {
         {/* Section header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <span className="font-mono text-xs text-acid uppercase tracking-widest font-bold">What We Do</span>
+            <span className="font-mono text-xs text-[#B4E50D] uppercase tracking-widest font-bold">What We Do</span>
             <h2 className="font-display text-6xl md:text-7xl text-cream mt-2 leading-none">
               OUR
               <br />
-              <span className="text-acid">SERVICES</span>
+              <span className="text-[#B4E50D]">SERVICES</span>
             </h2>
           </div>
           <p className="font-body text-cream/50 max-w-xs text-sm leading-relaxed">

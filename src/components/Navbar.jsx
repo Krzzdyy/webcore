@@ -24,10 +24,10 @@ const Navbar = () => {
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 group">
           <div className="w-9 h-9 bg-ink flex items-center justify-center border-2 border-ink shadow-comic-acid group-hover:shadow-none group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all">
-            <span className="text-acid font-display text-xl leading-none">W</span>
+            <span className="text-[#B4E50D] font-display text-xl leading-none">W</span>
           </div>
           <span className="font-display text-2xl tracking-wide text-ink">
-            Web<span className="text-cobalt">Core</span>
+            Web<span className="text-[#134686]">Core</span>
           </span>
         </a>
 
@@ -37,10 +37,10 @@ const Navbar = () => {
             <li key={link}>
               <a
                 href={`#${link.toLowerCase()}`}
-                className="font-body font-semibold text-sm text-ink hover:text-cobalt transition-colors relative group"
+                className="font-body font-semibold text-sm text-ink hover:text-[#134686] transition-colors relative group"
               >
                 {link}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-acid group-hover:w-full transition-all duration-200" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#B4E50D] group-hover:w-full transition-all duration-200" />
               </a>
             </li>
           ))}
@@ -48,7 +48,7 @@ const Navbar = () => {
 
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
-          <a href="#contact" className="btn-comic text-sm py-2 px-5">
+          <a href="#contact" className="btn-comic text-sm py-2 px-5 bg-[#B4E50D]">
             Get a Quote →
           </a>
         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
               key={link}
               href={`#${link.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
-              className="font-body font-semibold text-ink hover:text-cobalt"
+              className="font-body font-semibold text-ink hover:text-[#134686]"
             >
               {link}
             </a>

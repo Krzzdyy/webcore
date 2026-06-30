@@ -18,17 +18,17 @@ const Hero = () => {
       </div>
 
       {/* Floating background shapes */}
-      <div className="absolute top-24 right-12 w-64 h-64 bg-acid border-3 border-ink rounded-full opacity-30 animate-float" style={{ animationDelay: '0s' }} />
-      <div className="absolute bottom-20 left-16 w-40 h-40 bg-punch border-3 border-ink opacity-20 animate-float" style={{ animationDelay: '1.5s' }} />
-      <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-cobalt border-3 border-ink opacity-15 animate-float" style={{ animationDelay: '0.8s' }} />
+      <div className="absolute top-24 right-12 w-64 h-64 bg-[#B4E50D] border-3 border-ink rounded-full opacity-30 animate-float" style={{ animationDelay: '0s' }} />
+      <div className="absolute bottom-20 left-16 w-40 h-40 bg-[#E00543] border-3 border-ink opacity-20 animate-float" style={{ animationDelay: '1.5s' }} />
+      <div className="absolute top-1/2 right-1/4 w-20 h-20 bg-[#134686] border-3 border-ink opacity-15 animate-float" style={{ animationDelay: '0.8s' }}  />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-center py-16">
         {/* Left: text */}
         <div>
           {/* Tag */}
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-ink border-2 border-ink shadow-comic-acid">
-            <span className="w-2 h-2 rounded-full bg-acid animate-pulse" />
-            <span className="font-mono text-xs text-acid font-bold tracking-widest uppercase">
+            <span className="w-2 h-2 rounded-full bg-[#B4E50D] animate-pulse" />
+            <span className="font-mono text-xs text-[#B4E50D] font-bold tracking-widest uppercase">
               🇵🇭 Web Design Studio
             </span>
           </div>
@@ -36,12 +36,12 @@ const Hero = () => {
           <h1 className="font-display text-7xl md:text-8xl leading-none text-ink mb-4">
             WE BUILD
             <br />
-            <span className="text-cobalt">WEBSITES</span>
+            <span className="text-[#134686] ">WEBSITES</span>
             <br />
             THAT{' '}
             <span className="relative inline-block">
               <span className="relative z-10">WORK.</span>
-              <span className="absolute bottom-0 left-0 w-full h-4 bg-acid -z-0" />
+              <span className="absolute bottom-0 left-0 w-full h-4 bg-[#B4E50D] -z-0" />
             </span>
           </h1>
 
@@ -49,11 +49,11 @@ const Hero = () => {
             Landing pages & business websites for local shops, clinics, restaurants, and brands — fast delivery, bold design, real results.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-10">
-            <a href="#packages" className="btn-comic text-base px-8 py-4">
+          <div className="flex flex-wrap gap-4 mb-10  ">
+            <a href="#packages" className="btn-comic text-base px-8 py-4 bg-[#B4E50D]">
               See Packages ↓
             </a>
-            <a href="#contact" className="btn-comic-dark text-base px-8 py-4">
+            <a href="#contact" className="btn-comic-dark text-base px-8 py-4 ">
               Get a Quote →
             </a>
           </div>
@@ -76,13 +76,13 @@ const Hero = () => {
         {/* Right: big illustrated card stack */}
         <div className="relative flex justify-center items-center h-[480px]">
           {/* Back card */}
-          <div className="absolute top-8 right-8 w-72 h-80 bg-cobalt border-3 border-ink rotate-6" />
+          <div className="absolute top-8 right-8 w-72 h-80 bg-[#134686] border-3 border-ink rotate-6" />
 
           {/* Middle card */}
-          <div className="absolute top-4 right-4 w-72 h-80 bg-punch border-3 border-ink rotate-3" />
+          <div className="absolute top-4 right-4 w-72 h-80 bg-[#E00543] border-3 border-ink rotate-3" />
 
           {/* Front main card */}
-          <div className="relative w-72 h-80 bg-acid border-3 border-ink shadow-comic-lg flex flex-col items-center justify-center gap-4 p-8">
+          <div className="relative w-72 h-80 bg-[#B4E50D] border-3 border-ink shadow-comic-lg flex flex-col items-center justify-center gap-4 p-8">
             {/* Spider web tiny in card corner */}
             <div className="absolute top-0 right-0 opacity-20">
               <SpiderWeb size={80} className="rotate-90" />
@@ -98,17 +98,19 @@ const Hero = () => {
             {/* Small badges */}
             <div className="flex gap-2 mt-2 flex-wrap justify-center">
               {['React', 'Tailwind', 'SEO'].map((t) => (
-                <span key={t} className="tag-pill text-[10px] px-2 py-0.5">{t}</span>
+                <span key={t} className="tag-pill text-[10px] px-2 py-0.5 bg-[#B4E50D]">
+                  {t}
+                </span>
               ))}
             </div>
           </div>
 
           {/* Floating label stickers */}
-          <div className="absolute bottom-12 left-0 bg-punch border-3 border-ink px-4 py-2 shadow-comic rotate-[-4deg] animate-wiggle">
+          <div className="absolute bottom-12 left-0 bg-[#E00543] border-3 border-ink px-4 py-2 shadow-comic rotate-[-4deg] animate-wiggle">
             <span className="font-display text-cream text-lg">₱5,000+</span>
           </div>
           <div className="absolute top-0 left-6 bg-ink border-3 border-ink px-3 py-1 shadow-comic-acid rotate-[3deg]">
-            <span className="font-mono text-xs text-acid font-bold">5–7 DAY DELIVERY</span>
+            <span className="font-mono text-xs text-[#A6CB12] font-bold">5–7 DAY DELIVERY</span>
           </div>
         </div>
       </div>
@@ -117,7 +119,7 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 right-0 bg-ink border-t-3 border-ink py-3 overflow-hidden">
         <div className="flex gap-0 animate-[marquee_18s_linear_infinite] whitespace-nowrap">
           {Array(3).fill(null).map((_, i) => (
-            <span key={i} className="font-display text-acid text-xl tracking-widest mx-8">
+            <span key={i} className="font-display text-[#A6CB12] text-xl tracking-widest mx-8">
               LANDING PAGES &nbsp;✦&nbsp; BUSINESS WEBSITES &nbsp;✦&nbsp; BOOKING INTEGRATION &nbsp;✦&nbsp; MOBILE READY &nbsp;✦&nbsp; SEO SETUP &nbsp;✦&nbsp; CMS INCLUDED &nbsp;✦&nbsp;
             </span>
           ))}
